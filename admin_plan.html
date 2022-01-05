@@ -1,0 +1,69 @@
+<html>
+   	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="images/favicon-icon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <title>Add Plan</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+			.form-group{
+				margin-left:20%;
+				margin-right:20%;
+			}
+			.custom-file{
+                margin-right: 20%;
+                margin-left: 20%;
+            }
+			h2{
+				text-align: center;
+				padding-bottom: 5%;
+				padding-top: 2%;	
+			}
+			.nav{
+				background-color: blue;
+				color: white;
+				font-size: 24px;
+				width: 100%;
+			}
+			.nav a{
+				color: white;
+				font-size: 24px;
+				text-decoration: none;
+				padding : 10px;
+			}
+		</style>
+   	</head>
+   	<body>
+   	     <nav class="nav nav-pills flex-column flex-sm-row">
+  				<a class="flex-sm-fill text-sm-center nav-link active" href="/admin_display_plan.php">Back</a>
+  				<a class="flex-sm-fill text-sm-center nav-link" href="/admin_plan.html">Add Plan</a>
+		  </nav>
+		   <h2> Add New Plan</h2>
+   		<form enctype="multipart/form-data" method="post" action="plan_data.php">
+			<div class="form-group">
+				<label>Plan Name</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" name="plan" placeholder="Plan name" required />
+			</div>   
+			<div class="form-group">
+				<label>Price</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" name="price" placeholder="Price" required />
+			</div>
+   			<div class="form-group">
+				<label>Features </label>
+				<input type="text" class="form-control" id="exampleInputEmail1" name="feature" placeholder="Features list" required /><br>
+			</div>
+			<div class="input-group mb-3">
+				<div class="custom-file">
+					<input type="file" name="image1" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+					<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+				</div>
+			</div>
+   			<button style="margin-left: 45%;" class="btn btn-primary" name="submit">Add Plan</button>
+   		</form>
+   	</body>
+</html>

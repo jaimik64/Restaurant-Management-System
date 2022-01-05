@@ -1,0 +1,42 @@
+ form input[type='radio'] {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            appearance:none;
+        }
+        [type='radio']+ img{
+                cursor: pointer;
+        }
+        input[type='radio'] : active + .ratingcard{
+            opacity: 0.9;
+        }
+        input[type='radio']:checked + .ratingcard{
+            -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+        }
+        .ratingcard{
+            cursor:pointer;
+            background-size:contain;
+            background-repeat:no-repeat;
+            display:inline-block;
+            width:100px;height:70px;
+            -webkit-transition: all 100ms ease-in;
+            -moz-transition: all 100ms ease-in;
+                    transition: all 100ms ease-in;
+            -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+            -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+                    filter: brightness(1.8) grayscale(1) opacity(.7);
+        }
+        .ratingcard : hover{
+            -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+        }
+        .terrible{ background-image: url('./images/1star.jpg'); }
+        .moderate{ background-image: url('./images/2star.jpg'); }  
+        .bad{ background-image: url('./images/3star.jpg'); }
+        .good{ background-image: url('./images/4star.jpg'); }
+        .excellent{ background-image: url('./images/5star.jpg'); }

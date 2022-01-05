@@ -1,0 +1,169 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.cards-section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.cards-section a:hover,
+.cards-section a {
+  text-decoration: none;
+}
+
+.cards-section > div {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.cards-section .pro-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 440px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 5px 20px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 20px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 5px 20px -12px rgba(0, 0, 0, 0.75);
+}
+
+.cards-section .pro-card .imgBx {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.cards-section .pro-card .imgBx img {
+  height: 100%;
+  width: 100%;
+}
+
+.cards-section .pro-card .contentBx {
+  width: 100%;
+  text-align: center;
+  transition: 1s;
+}
+
+.cards-section .pro-card .contentBx .quan-count {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards-section .pro-card .contentBx .quan-count > a {
+  height: 28px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.cards-section .pro-card .contentBx .quan-count .plus-btn {
+  background: green;
+}
+
+.cards-section .pro-card .contentBx .quan-count .min-btn {
+  background: red;
+}
+
+.cards-section .pro-card .contentBx .quan-count .counter {
+  height: 34px;
+  width: 68px;
+  border-radius: 3px;
+  display: flex;
+
+  font-size: 18px;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 131);
+}
+
+.cards-section .pro-card .contentBx h2 {
+  position: relative;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+
+.cards-section .pro-card .contentBx .count-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+}
+
+.cards-section .pro-card .contentBx .count-items h3 {
+  color: rgb(73, 73, 73);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.cards-section .pro-card .contentBx .count-items span {
+  width: fit-content;
+  border-radius: 4px;
+  height: 24px;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  background: rgb(65, 65, 65);
+  transition: 0.5s;
+}
+
+.cards-section .pro-card .contentBx .cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #b13476;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: 600;
+  color: white;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0s;
+}
+
+.title2{
+        text-align: center;
+        color: #66afe9;
+        background-color: #efefef;
+        padding: 2%;
+      margin: 2%;
+}
+h2{
+      text-align: center;
+      color: #66afe9;
+      padding: 2%;
+}

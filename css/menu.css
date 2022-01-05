@@ -1,0 +1,123 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu .category{
+    width: 70%;
+    overflow: auto;
+    white-space: nowrap;   
+}
+.menu .category .categItem{
+    margin: 0px 20px;
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: #b13476;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+}
+.menu .category::-webkit-scrollbar {
+    display: none;
+  }
+.menu .category .categItem:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #b13476;
+    border-color: #b13476;
+}
+.menu .category .categItem h3{
+    
+    margin:  0px;
+}
+.menu  .items{
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu  .items .itemsHead{
+    font-size: 22px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu  .items .itemsHead h3{
+    font-weight: 600;
+    color: #b13476;
+    text-transform: uppercase;
+}
+.menu  .items .itemsMenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu  .items .itemsMenu .mainItem{
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu  .items .itemsMenu .mainItem .itemName,.menu  .items .itemsMenu .mainItem .itemPrice{
+    font-weight: 500;
+    font-size: 18px;
+}
+.menu  .items .itemsMenu .mainItem .verticalDevider{
+    font-weight: 600;
+    color: #b13476;
+    font-size: 30px;
+}
+.menu  .items .itemsMenu .mainItem .itemsCount{
+    /* width: 80px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu  .items .itemsMenu .mainItem .itemsCount>a{
+    margin: 0px 10px;
+    text-decoration: none;
+    padding: 3px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    color: white;
+}
+.menu  .items .itemsMenu .mainItem .itemsCount .itemIncr{
+    background-color: green;
+}
+.menu  .items .itemsMenu .mainItem .itemsCount .itemDecr{
+    background-color: red;
+}
+.menu  .items .itemsMenu .mainItem .itemsCount .itemMainCount{
+    padding: 3px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: grey;
+}
+.menu  .items .itemsMenu .mainItem .itemToCart{
+    font-size: 16px;
+    color: white;
+    background-color: #b13476;
+    border: 0px;
+    padding: 3px 15px;
+    border-radius: 5px;
+} 
+.menu  .items .itemsMenu .mainItem .itemToCart i{
+    margin-right: 10px;
+}
